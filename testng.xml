@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM Automation Suite" verbose="2">
+
+
+
+
+    <!-- ══════════════════════════════════════════════════════
+         MAIN FULL FLOW — browser opens ONCE, login happens ONCE
+         ══════════════════════════════════════════════════════ -->
+    <test name="Login Page Tests" preserve-order="true">
+        <parameter name="Browser" value="chrome"/>
+        <parameter name="Url"
+                   value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+        <classes>
+            <class name="org.example.LoginPage.TestCases"/>
+            <class name="org.example.Tests.OrangeHRMTest"/>
+        </classes>
+    </test>
+
+
+
+
+
+
+</suite>
